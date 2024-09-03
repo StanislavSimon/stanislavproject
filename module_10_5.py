@@ -29,7 +29,7 @@ if __name__ == '__main__':
     start = datetime.datetime.now()
     print(f"Начало многопроцессного выполнения: {start}")
 
-    with Pool() as pool:
+     with Pool(processes=4) as pool:
         pool.map(read_info, filenames)
 
     end = datetime.datetime.now()
