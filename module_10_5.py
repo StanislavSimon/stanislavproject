@@ -14,7 +14,6 @@ def read_info(name):
 if __name__ == '__main__':
     filenames = [f'./file{number}.txt' for number in range(1, 5)]
 
-
     start = datetime.datetime.now()
     print(f"Начало линейного выполнения: {start}")
 
@@ -29,7 +28,7 @@ if __name__ == '__main__':
     start = datetime.datetime.now()
     print(f"Начало многопроцессного выполнения: {start}")
 
-     with Pool(processes=4) as pool:
+    with Pool(processes=4) as pool:
         pool.map(read_info, filenames)
 
     end = datetime.datetime.now()
