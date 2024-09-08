@@ -17,7 +17,7 @@ class Runner:
 
 
 class RunnerTest(unittest.TestCase):
-    def test_wal(self):
+    def test_walk(self):
         runner = Runner('Test Runner ')
         for _ in range(10):
             runner.walk()
