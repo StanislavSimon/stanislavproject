@@ -57,7 +57,7 @@ class TournamentTest(unittest.TestCase):
         tournament = Tournament(90, self.runner1, self.runner3)
         results = tournament.start()
         TournamentTest.all_results['Усэйн, Ник'] = results
-        self.assertTrue(results[1] == 'Ник')
+        self.assertTrue(results[2] == 'Ник')
 
     def test_andrey_nick(self):
         tournament = Tournament(90, self.runner2, self.runner3)
