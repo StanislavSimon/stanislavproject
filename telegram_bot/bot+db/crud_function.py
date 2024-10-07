@@ -24,4 +24,4 @@ def get_all_products(title, description, price):
 
 
 connection.commit()
-connection.close()
+#connection.close()
