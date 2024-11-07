@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин</title>
+</head>
+<body>
+    <h1>Магазин</h1>
+    <nav>
+        <ul>
+            <li><a href="{% url 'home' %}">Главная</a></li>
+            <li><a href="{% url 'shop' %}">Магазин</a></li>
+            <li><a href="{% url 'about' %}">О платформе</a></li>
+        </ul>
+    </nav>
+        <h1>Games</h1>
+    <ul>
+
+        <li>AtomicHeart <button>Купить</button></li>
+        <li>Cyberpunk 2077 <button>Купить</button></li>
+        <li>PayDay 3 <button>Купить</button></li>
+    </ul>
+    <button onclick="window.location.href='{% url 'home' %}'">На главную</button>
+</body>
+</html>
