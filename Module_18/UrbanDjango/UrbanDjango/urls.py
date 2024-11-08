@@ -18,5 +18,7 @@ from django.contrib import admin
 from django.urls import path
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('class/', ClassView.as_view(), name='class_view'),
+    path('function/', function_view, name='function_view'),
 ]
+
