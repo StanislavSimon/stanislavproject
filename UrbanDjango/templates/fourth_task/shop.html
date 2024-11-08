@@ -7,8 +7,9 @@
     <ul>
     {% for game in games %}
         <li>{{ game }}</li>
+        <li> <button>Купить</button></li>
     {% endfor %}
-    </ul>
-    <button onclick="window.location.href='{% url 'home' %}'">На главную</button>
+
+        <button onclick="window.location.href='{% url 'home' %}'">На главную</button>
 {% endblock %}
 
